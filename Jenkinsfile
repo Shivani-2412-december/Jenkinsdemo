@@ -52,6 +52,5 @@ pipeline {
                 echo 'Hello World'
             }
         }
-
     }
 }
