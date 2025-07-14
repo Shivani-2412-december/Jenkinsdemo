@@ -1,0 +1,57 @@
+pipeline {
+    agent { label 'shivani'}
+
+    stages {
+        stage('A') {
+            steps {
+                steps {
+                echo 'sending notification'
+                mail to: 'pinkytownhall123@gmail.com',
+                     subject: "Build Triggered - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                     body: "The Jenkins build has been triggered successfully."
+            }
+            }
+        }
+        stage('B') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('C') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('D') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('E') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('F') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('G') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('H') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('I') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+
+    }
+}
